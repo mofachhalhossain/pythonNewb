@@ -16,3 +16,10 @@ _str_access = "Hello World"
 print("Initial String: ", _str_access)
 print("Accessing last character: "+_str_access[-1])
 print("Accessing first character: "+_str_access[0])
+
+#String slicing
+print("Sliced string: ", _str_access[2:5])
+
+#String Update
+_update_str_access = "Hello People"
+print("Updated String: "+_update_str_access)
