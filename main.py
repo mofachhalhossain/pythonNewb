@@ -1,6 +1,6 @@
 # Data Types
 
-#String
+'''String'''
 
 #String creation
 string1 = "I'm string1"
@@ -16,6 +16,9 @@ _str_access = "Hello World"
 print("Initial String: ", _str_access)
 print("Accessing last character: "+_str_access[-1])
 print("Accessing first character: "+_str_access[0])
+
+#String length
+print("Length of string: ",len(_str_access))
 
 #String slicing
 print("Sliced string: ", _str_access[2:5])
@@ -37,3 +40,6 @@ print(_format2_str)
 integer = 12.3431
 print("Formation in 3.2% format: ")
 print('Result: %3.2f' %integer)
+
+
+
