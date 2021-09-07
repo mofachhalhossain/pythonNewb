@@ -87,3 +87,26 @@ print("Even square: ",_square_even)
 #Odd square
 _square_odd = [x*x for x in range(1,10) if x%2==1]
 print("Odd square: ", _square_odd)
+
+
+'''Tuples'''
+
+_tuple1 = (1,2,3)
+print('Initial tuple: ', _tuple1)
+_tuple1 = tuple('hello')
+print('Added Elements: ',_tuple1)
+
+#Creating tuples with nested tuples with differnt data types
+_tuple_int = (5,6,7,8)
+_tuple_str = ('Hello', 'world', '!')
+_tuple_mix = _tuple_int,_tuple_str
+print("Mixed tuple: ",_tuple_mix)
+
+_tuple_list = ([])
+for i in range(1,6):
+    _tuple_list.append(i)
+print("List tuple: ", _tuple_list)
+
+#tuple concat
+_tuple_concat = _tuple_int+_tuple_str
+print("Concat : ", _tuple_concat)
