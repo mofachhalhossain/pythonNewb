@@ -28,3 +28,12 @@ print("Updated String: "+_update_str_access)
 '''del(_update_str_access)
 print(_update_str_access)'''
 '''del will delete entire string.'''
+
+#String format
+_format1_str = "{a} {b} {c}".format(c=" coding ", a=" Welcome ", b=" to ")
+print(_format1_str)
+_format2_str = "{}{}{}".format("Hello ", "World", "!")
+print(_format2_str)
+integer = 12.3431
+print("Formation in 3.2% format: ")
+print('Result: %3.2f' %integer)
