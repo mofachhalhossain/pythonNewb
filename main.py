@@ -147,3 +147,30 @@ print('pop dictionary element: ',_del_dictionary)
 _item_deleted = _del_dictionary.popitem()
 print("After pop",_del_dictionary)
 print("item deleted: ", _item_deleted)
+
+
+'''Array'''
+
+#creating array
+import array as arr
+a = arr.array('i',[1,2,3,4,5])
+print("array: ", end='')
+for i in range(0,5):
+    print(a[i], end=' ')
+
+#accessing/searching element
+print("\nAccessing element 4: ", a[4])
+
+#updating element
+a[2] = 6
+print("Update: ", end='')
+for i in range(0,5):
+    print(a[i], end=' ')
+
+#slicing array
+import array as array
+b = array.array('d', [1.1,2.2,3.3,4.4,5.5])
+_sliced_array = b[0:3]
+print("\nsliced array: ")
+for i in range(0,5):
+    print(b[i])
