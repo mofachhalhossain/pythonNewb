@@ -110,3 +110,40 @@ print("List tuple: ", _tuple_list)
 #tuple concat
 _tuple_concat = _tuple_int+_tuple_str
 print("Concat : ", _tuple_concat)
+
+
+'''Dictionary'''
+
+_dictionary = {1: 'Welcome', 2: 'to', 3: 'python', 4: 'world'}
+print(_dictionary)
+_dictionary2 = dict([(1,'hello'), (2,'World')])
+print(_dictionary2)
+
+#Nested dictionary
+_nested_dictionary = {1: 'Hello', 2: 'I\'m', 3:{'a': 'nested ', 'b': 'dictionary'}}
+print(_nested_dictionary)
+
+#update dictionary
+_update_dictionary = {3: {'a': 'updated', 'b': 'dictionary'}}
+_nested_dictionary.update(_update_dictionary)
+print(_nested_dictionary)
+
+#Accessing Element from dictionary
+print('Accessing element: ',_nested_dictionary[3])
+_access_element = _nested_dictionary.get(2)
+print('Access element by get: ',_access_element)
+
+#Deleting Element from dictionary
+_del_dictionary = {1: 'One', 2: 'Two', 3: "Three", 4: 'Four', 5: 'Five'}
+print("Initial dictionary: ", _del_dictionary)
+del _del_dictionary[3]
+print("After deleting: ", _del_dictionary)
+
+#pop
+_del_dictionary.pop(4)
+print('pop dictionary element: ',_del_dictionary)
+
+#popitem()
+_item_deleted = _del_dictionary.popitem()
+print("After pop",_del_dictionary)
+print("item deleted: ", _item_deleted)
